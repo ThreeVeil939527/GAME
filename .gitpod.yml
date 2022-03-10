@@ -1,4 +1,4 @@
 tasks:
   - command: sudo apt-get update && sudo apt get -y upgrade
-  - command: cat program_junk/graalvm.part* >graalvm.tar.gz && tar xzf graalvm.tar.gz && mv graalvm-ce-java17-22.0.0.2 program_junk/ && mv program_junk/graalvm-ce-java17-22.0.0.2 program_junk/graalvm && rm graalvm.tar.gz
+  - command: cat program_junk/graalvm.tar.gz.part* >graalvm.tar.gz && tar xzf graalvm.tar.gz && mv graalvm-ce-java17-22.0.0.2 program_junk/ && mv program_junk/graalvm-ce-java17-22.0.0.2 program_junk/graalvm && rm graalvm.tar.gz
   - command: export PATH=/workspace/GAME/program_junk/graalvm/bin:$PATH && export JAVA_HOME=/workspace/GAME/program_junk/graalvm/
